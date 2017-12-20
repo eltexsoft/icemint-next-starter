@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-          <title>Flow Starter Kit</title>
+          <title>Icemint Next Starter</title>
           <link rel="stylesheet" href="/static/styles/reboot.css" />
         </Head>
         <body className="custom_class">
