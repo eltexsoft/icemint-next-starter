@@ -1,5 +1,7 @@
 const initialState = {
-  title: 'Icemint Starter Kit'
+  title: 'Icemint Next Starter',
+  desc: 'For more info check the repo',
+  url: 'https://github.com/icemint/icemint-next-starter/blob/master/README.md'
 }
 
 const reducer = (state = initialState) => {

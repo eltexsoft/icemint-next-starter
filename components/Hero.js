@@ -2,7 +2,9 @@
 import * as React from 'react'
 
 type Props = {
-  title: String
+  title: String,
+  desc: String,
+  url: String
 }
 
 const Hero = (props: Props) => (
@@ -18,18 +20,29 @@ const Hero = (props: Props) => (
         <img src="/static/img/Stylelint.png" alt="next" />
         <img src="/static/img/Prettier.png" alt="next" />
       </div>
+      <p className="hero-description">
+        {props.desc} <a href={props.url}>README</a>
+      </p>
     </div>
 
     <style jsx>{`
       .hero {
-        background-color: #eceeef;
+        background: linear-gradient(45deg, #fff, #f4fcfa, #fff);
         padding: 5rem 1rem;
-        margin-bottom: 3rem;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
 
       .hero-title {
         text-align: center;
         font-size: 4em;
+      }
+
+      .hero-description {
+        margin-top: 2rem;
       }
 
       .hero-images {

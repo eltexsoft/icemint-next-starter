@@ -15,15 +15,6 @@ export default class MyDocument extends Document {
         <Head>
           <title>Flow Starter Kit</title>
           <link rel="stylesheet" href="/static/styles/reboot.css" />
-          <style>{`
-            * {
-              box-sizing: border-box;
-            }
-
-            body { 
-              font-size: 18px;
-            }
-          `}</style>
         </Head>
         <body className="custom_class">
           {this.props.customValue}
