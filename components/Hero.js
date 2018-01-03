@@ -19,7 +19,7 @@ const Hero = (props: Props) => (
         <img src="/static/img/ESLint.png" alt="next" />
         <img src="/static/img/Stylelint.png" alt="next" />
         <img src="/static/img/Prettier.png" alt="next" />
-      </div>
+      </div>{' '}
       <p className="hero-description">
         {props.desc} <a href={props.url}>README</a>
       </p>
