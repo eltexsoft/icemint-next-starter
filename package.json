@@ -20,7 +20,8 @@
     "eslint": "eslint .",
     "stylelint": "stylelint .",
     "flow": "flow",
-    "start": "next start"
+    "start": "next start",
+    "precommit": "lint-staged"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.3",
@@ -37,6 +38,8 @@
     "eslint-plugin-react": "^7.5.1",
     "eslint-plugin-standard": "^3.0.1",
     "flow-bin": "^0.61.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
     "lost": "^8.2.0",
     "postcss-nested": "^3.0.0",
     "prettier": "^1.9.2",
@@ -44,6 +47,9 @@
     "styled-jsx-plugin-postcss": "^0.1.1",
     "stylelint": "^8.4.0",
     "stylelint-config-standard": "^18.0.0"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": ["prettier --write", "git add"]
   },
   "postcss": {
     "plugins": {
