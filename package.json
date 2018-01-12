@@ -49,7 +49,7 @@
     "stylelint-config-standard": "^18.0.0"
   },
   "lint-staged": {
-    "*.{js,css,md}": ["prettier --write", "git add"]
+    "*.{js,css,md}": ["yarn eslint && yarn stylelint", "git add"]
   },
   "postcss": {
     "plugins": {
