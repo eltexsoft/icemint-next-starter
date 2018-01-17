@@ -4,8 +4,8 @@ import * as React from 'react'
 import withRedux from 'next-redux-wrapper'
 import initStore from '../store/configureStore'
 
-import Hero from '../containers/Hero'
+import App from '../containers/App'
 
-const Index = () => <Hero />
+const Index = () => <App />
 
 export default withRedux(initStore)(Index)

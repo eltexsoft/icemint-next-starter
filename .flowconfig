@@ -5,5 +5,9 @@
 
 [libs]
 types/
+flow-typed
+
+[lints]
 
 [options]
+

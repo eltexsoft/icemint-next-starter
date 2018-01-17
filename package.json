@@ -19,7 +19,6 @@
     "build": "next build",
     "eslint": "eslint .",
     "stylelint": "stylelint .",
-    "flow": "flow",
     "start": "next start",
     "precommit": "lint-staged"
   },
@@ -49,7 +48,7 @@
     "stylelint-config-standard": "^18.0.0"
   },
   "lint-staged": {
-    "*.{js,css,md}": ["yarn eslint && yarn stylelint", "git add"]
+    "*.{js,css,md}": ["yarn eslint && yarn stylelint && flow", "git add"]
   },
   "postcss": {
     "plugins": {
