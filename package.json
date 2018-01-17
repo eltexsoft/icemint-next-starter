@@ -48,7 +48,7 @@
     "stylelint-config-standard": "^18.0.0"
   },
   "lint-staged": {
-    "*.{js,css,md}": ["yarn eslint && yarn stylelint && flow", "git add"]
+    "*.{js,css}": ["yarn eslint && yarn stylelint && flow", "git add"]
   },
   "postcss": {
     "plugins": {
